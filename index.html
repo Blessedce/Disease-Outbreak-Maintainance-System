@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disease Outbreak Maintenance System</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+<body>
+    <header>
+        <h1>Disease Outbreak Maintainance System</h1>
+        <p>Track, Analyze, and Respond to Disease Outbreaks</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="admin.html">Admin</a></li>
+            <li><a href="outbreak.html">Outbreak Status</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+        <h2>Real-Time Outbreak Monitoring</h2>
+        <p>Get live updates and alerts on disease outbreaks worldwide</p>
+        <div class="btn">
+            <button onclick="scrollToSection('contact')">Get Notified</button>
+        </div>
+    </div>
+    <div class="hero-image">
+        <img src="./components/outbreak-map.jpeg" alt="Outbreak map showing affected areas">
+    </div>
+    </section>
+
+    <section class="features-container">
+        <div class="features">
+            <h2>Key Features</h2>
+            <div class="feature-grid">
+                <div class="feature">
+                    <h3>Live Tracking</h3>
+                    <p>Monitor outbreaks in real-time on an interactive map.</p>
+                </div>
+                <div class="feature">
+                    <h3>Emergency Alerts</h3>
+                    <p>Receive instant alerts for critical situations.</p>
+                </div>
+                <div class="feature">
+                    <h3>Medical Resources</h3>
+                    <p>Access healthcare facilities and resources in affected areas.</p>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <section class="contact" id="contact">
+        <form action="contact.php" method="POST" id="contactform">
+            <h2>Contact Emergency Support</h2>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" id="message" placeholder="Enter your message" required></textarea>
+            <button type="submit">Submit</button>
+            <button type="reset">Clear</button>
+        </form>
+        <div class="contact-image">
+            <img src="./components/your-image.jpeg" alt="">
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Disease Outbreak Maintenance System | All Rights Reserved</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

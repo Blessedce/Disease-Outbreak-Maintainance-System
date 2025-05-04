@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Administration</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- SweetAlert2 CDN -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+<body>
+    <nav class="nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="admin.html">Administration</a></li>
+            <li><a href="outbreak.html">Outbreak Status</a></li>
+        </ul>
+    </nav>
+
+    <header class="head">
+        <h1>Hospital Administrator Report</h1>
+    </header>
+
+    <section class="hero1">
+        <div class="hero-content1">
+        <h2>Welcome!</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste recusandae itaque explicabo perspiciatis hic, vitae ullam molestiae aliquid eius dolor ea neque, doloribus repudiandae voluptatem pariatur necessitatibus sit adipisci quis.</p>
+        </div>
+        <div class="admin-image">
+            <img src="./components/hos.jpeg" alt="">
+        </div>
+    </section>
+
+
+    <section class="admin" id="admin">
+        <form id="adminform" action="admin-report.php" method="POST">
+            <h2>Report an Outbreak</h2>
+            <input type="text" id="hospitalName" placeholder="Hospital Name" name="hospitalName" required>
+            <input type="text" id="location" placeholder="Location" name="location" required>
+            <input type="text" id="diseaseName" placeholder="Disease Name" name="diseaseName" required>
+            
+            <button type="submit">Submit</button>
+            <button type="reset">Clear</button>
+        </form>
+       
+    </section>
+    <footer>
+        <p>&copy; 2025 Disease Outbreak Maintenance System | All Rights Reserved</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
